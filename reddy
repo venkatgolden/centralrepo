@@ -1,0 +1,16 @@
+PipelineJob4
+
+pipeline {
+    agent any 
+    stages {
+        stage('Stage 1') {
+            steps {
+                sh '''
+                ls
+                date
+                cal 2021
+                '''
+            }
+        }
+    }
+}
